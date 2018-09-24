@@ -1,11 +1,10 @@
 \documentclass[a4paper,12pt]{article}
-\author{Adam Ilyas}
+\author{Adam Ilyas 725819}
 \title{
 CS-E5740 Complex Networks, \\
 Answers to exercise set 1
 }
 
-\usepackage{a4wide}
 \usepackage{amsfonts}
 \usepackage{verbatim}
 \usepackage{amsmath}
@@ -19,11 +18,12 @@ Answers to exercise set 1
 
 \maketitle
 
+Acknowledgements: Lukas Haug, Bianca Lachennmann, Christoph Berger
 \section{Basic network properties}
 
 \begin{figure}[!ht]
 	\begin{center}
-    \includegraphics[scale=0.33]{graph_ex_1.png}
+    \includegraphics[scale=0.33]{graph_ex_1.PNG}
     \caption{The graph for exercise 1.}
 	\label{fig:graph1}
 	\end{center}
@@ -38,7 +38,7 @@ graph
                0 \quad if \quad (j,i) \notin E
             \end{cases}
 \]
-Hence, the adjacency matrix for the graph in figure 1 is as follows:
+Hence, the adjacency matrix for the graph in figure 1 is as follows:asd
 
 	$$
 	\begin{bmatrix} 
@@ -80,7 +80,7 @@ Vertices & Degree\\
 \end{tabular}
 \end{table}
 \break
-The degree distribution $P(k)$ is the probability that the degree of a randomly chosen node is $k$.
+The degree distribution $P(k)$ is the probability that the degree of a randomly chosen node is $2k$.
 $$P(k) = \frac{N_k}{N}$$
 where $N_k$ is the number of nodes of degree $k$.\newline\newline
 The degree distribution $P(k)$ of graph 1: 
@@ -145,7 +145,7 @@ ax.set_title('The Karate Club network')
 Network:
 \begin{figure}[!ht]
 	\begin{center}
-    \includegraphics[scale=0.8]{graph_karate.png}
+    \includegraphics[scale=0.8]{graph_karate.PNG}
     \caption{Karate Club Network graph}
 	\label{fig:graph2}
 	\end{center}
@@ -158,7 +158,7 @@ m = graph.number_of_edges()
 n = graph.number_of_nodes()
 density = 2*m/(n*(n-1))
 \end{lstlisting}
-Edge Density: 0.13903743315508021
+Edge Density: \underline{0.13903743315508021}
 
 \subsection*{c. Calculate the average clustering coefficient}
 Calculate the average clustering coefficient with your own algorithm and compare it to the output of the corresponding NetworkX function.
@@ -187,7 +187,7 @@ for node in all_nodes:
     
 sum([node_ls[node]["coefficient"] for node in node_ls])/ len(node_ls) 
 \end{lstlisting}
-Average Clustering Coefficient:  0.5706384782076824
+Average Clustering Coefficient:  \underline{0.5706384782076824}
 
 \subsection*{d. Calculate the Degree Distribution}
 Calculate the degree distribution P(k) and the complementary cumulative degree distribution-CDF(k) of the network. Visualize the distributions using matplotlib.pyplot. 
@@ -210,32 +210,33 @@ Degree & Degree Distribution (\%)\\
 17 & 0.029
 \end{tabular}
 \end{table}
-\begin{figure}[h!]
-	\begin{center}
-    \includegraphics[scale=0.8]{graph_degree_distribution.png}
-    \caption{Degree Distribution Graph}
-	\end{center}
+% 2 figure side by side
+\begin{figure}[!ht]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+            \includegraphics[scale=0.4]{graph_degree_distribution.png}
+            \caption{Degree Distribution graph}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+            \includegraphics[scale=0.4]{graph_ccdf.png}
+            \caption{Degree Complementary CDF graph}
+    \end{minipage}
 \end{figure}
-\begin{figure}[h!]
-	\begin{center}
-    \includegraphics[scale=0.8]{graph_ccdf.png}
-    \caption{Degree Complementary CDF graph}
-	\end{center}
-\end{figure}
-
 \clearpage
 
 \subsection*{e. Calculate the average shortest path length}
 \begin{lstlisting}
 length = nx.average_shortest_path_length(graph)
 \end{lstlisting}
-Average shortest path length:  2.408199643493761
+Average shortest path length: \underline{2.408199643493761}
 
 \subsection*{f. Create a scatter plot of $C_i$ as a function of $k_i$.}
 Using matplotlib.pyplot library
 \begin{figure}[h!]
 	\begin{center}
-    \includegraphics[scale=0.8]{graph_scatter.png}
+    \includegraphics[scale=0.8]{graph_scatter.PNG}
     \caption{$C_i$ as a function of $k_i$}
 	\end{center}
 \end{figure}
@@ -247,7 +248,7 @@ where G* is induced by the the vertices V* = $\{1…4\}$ of network visualized i
 
 \begin{figure}[h]
 	\begin{center}
-    \includegraphics[scale=0.5]{induced.png}
+    \includegraphics[scale=0.5]{induced.PNG}
     \caption{Induced subgraph G*}
 	\end{center}
 \end{figure}
@@ -324,8 +325,11 @@ For $m+1$,
 \begin{equation}
 \begin{split}
 (A^{m+1})_{ij} & = (A^m \cdot A)_{ij} \\
-& = \sum_{l=1}^{N} (a_{il}^m \times a_{lj})\\
+& = \sum_{l=1}^{N} (a_{il}^m * a_{lj})\\
 & = a_{ij}^{m+1}
 \end{split}
 \end{equation}
+\textbf{Conclusion}\\
+Hence, for the matrix $A^m$, each element $(A^m)_{ij}$ corresponds to number of walks of length $m$ between the nodes $i$ and $j$. 
+
 \end{document}
