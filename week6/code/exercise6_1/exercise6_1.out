@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Centrality measures for undirected networks}{}% 1
+\BOOKMARK [2][-]{subsubsection.1.0.1}{a\) Your first task is to compute/reason without a computer the first 4 centrality measures of the above list for the network shown in Fig. 1}{section.1}% 2
+\BOOKMARK [3][-]{subsubsection.1.0.2}{b\) Use NetworkX to compute all five centrality measures for the networks}{subsubsection.1.0.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.0.3}{c\) To highlight the differences between the centrality measures, plot five visualizations for all the networks studied in b\)}{subsubsection.1.0.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.0.4}{d\) Based on the results of a\) and b\), how do these centralities differ from each other?}{subsubsection.1.0.1}% 5
+\BOOKMARK [1][-]{section.2}{Degree correlations and assortativity}{}% 6
+\BOOKMARK [2][-]{subsubsection.2.0.1}{a\) Create a scatter plot of the degrees of pairs of connected nodes.}{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.0.2}{b\) Produce a heat map 1 of the degrees of all connected nodes.}{subsubsection.2.0.1}% 8
+\BOOKMARK [3][-]{subsubsection.2.0.3}{c\)}{subsubsection.2.0.1}% 9
+\BOOKMARK [3][-]{subsubsection.2.0.4}{Does this hold for these two social networks? What could explain this result?}{subsubsection.2.0.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.0.5}{d\) For each node, compute the average nearest neighbour degree k\137\173nn\175 and}{subsubsection.2.0.1}% 11
+\BOOKMARK [1][-]{section.3}{Bipartite networks}{}% 12
+\BOOKMARK [2][-]{subsubsection.3.0.1}{a\) Construct the two unipartite projections of the network \205 the network of actors and the network of movies.}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.0.2}{b\) Show that, in general, it is not possible to uniquely reconstruct a bipartite network from its two unipartite projections.}{subsubsection.3.0.1}% 14

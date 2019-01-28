@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.9.24)  12 OCT 2018 01:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.16)  19 NOV 2018 18:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -337,7 +337,7 @@ Missing character: There is no ’ in font cmr8!
 ] (./work3.aux) ) 
 Here is how much of TeX's memory you used:
  3886 strings out of 494923
- 54323 string characters out of 6180742
+ 54323 string characters out of 6180741
  122085 words of memory out of 5000000
  7139 multiletter control sequences out of 15000+600000
  13859 words of font info for 54 fonts, out of 8000000 for 9000
@@ -354,7 +354,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist
 /type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt12.pfb>
-Output written on work3.pdf (5 pages, 144123 bytes).
+Output written on work3.pdf (5 pages, 143993 bytes).
 PDF statistics:
  105 PDF objects out of 1000 (max. 8388607)
  52 compressed objects within 1 object stream

@@ -1,0 +1,52 @@
+\documentclass[a4paper,12pt]{article}
+\author{Adam Ilyas 725819}
+\title{
+CS-E5740 Complex Networks, \\
+Project Report
+}
+
+\usepackage{amsfonts}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage{listings}
+
+\begin{document}
+\vspace{8pt}
+\setlength\parindent{0pt}
+\maketitle
+\section{Basic implementation}
+
+a) If Allentown (node-id=0) is infected at the beginning of the data set, at which time
+does Anchorage (ANC, node-id=41) become infected?
+
+\bigskip
+\textbf{Ans: }Node 41 is infected at time: 1229290800
+
+\section{Effect of infection probability p on spreading speed}
+
+a)  Plot the averaged prevalence $\rho(t)$ of the disease (fraction of infected nodes) as a
+function of time for each of the infection probabilities. Plot the 5 curves in one graph.
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{q2}
+\end{center}
+
+b)  For which infection probabilities does the whole network become fully infected?
+What are the stepwise, nearly periodic “steps” in the curves due to?
+
+\bigskip
+\textbf{Ans: }The probabilies $p=0.5$ and $p=1$ results in the whole network being infected.
+The period steps might be due a hub being infected hence, causing a higher dispersal of the infection (hubs have
+more neighbours)
+
+\section{Effect of seed node selection on spreading speed}
+Next, we will investigate how the selection of the seed node affects the spreading speed.
+
+\bigskip
+a) Use nodes with node-ids [0, 4, 41, 100, 200] (ABE, ATL, ACN, HSV, DBQ) as
+seeds and p = 0.1, and run the simulation 10 times for each seed node. Then, plot the
+average prevalence of the disease separately for each seed node as a function of time.
+\end{document}
